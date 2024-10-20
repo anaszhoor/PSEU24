@@ -3,9 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HW#2 By AnasZhour</title>
 </head>
 <body>
-    
+    <form action="">
+        <table border="1px solid black" cellspacing="0" cellpadding="10">
+            <tr cellpadding="20px">
+                <th colspan="2" style="padding: 25px;" >Summer Camp Registration Form</th>
+            </tr>
+            <tr>
+                <td align="right" width="200"><label for="fname">Full Name</label></td>
+                <td><input type="text" placeholder="Enter First Name" id="fname"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="date">Date of Birth</label></td>
+                <td><input type="date" id="date"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="gender">Gender</label></td>
+                <td>
+                    <input id="gender-m" type="radio" value="Male" name="gender">
+                    <label for="gender-m">Male</label>
+                    <input id="gender-f" value="Female" type="radio" name="gender">
+                    <label for="gender-f">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+                <td>
+                    <select name="Country" id="Country">
+                        <option value="" disabled selected>Country</option>
+                        <option value="Palestine">Palestine</option>
+                        <option value="jordan">Jordan</option>
+                        <option value="Egypt">Egypt</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right"><label for="email">E-mail</label></td>
+                <td><input type="email" placeholder="Enter E-mail" id="email"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="tel">Phone</label></td>
+                <td><input type="tel" id="tel" placeholder="Enter Phone"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="password">Password</label></td>
+                <td><input type="password" id="password"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="conf-password">Confirm Password</label></td>
+                <td><input type="password" id="conf-password"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="gpa">GPA (100)</label></td>
+                <td><input type="number" placeholder="92.5" id="gba"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="range">Programmings skills (0-100)</label></td>
+                <td><input type="range" id=range></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="">Your favorite color</label></td>
+                <td><input type="color"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox"><label for=""> I Agree to the Term of use</label></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="button" value="Submit">
+                    <input type="button" value="Cancel">
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
 </body>
 </html>
