@@ -1,0 +1,123 @@
+/* Quiz Container */
+.quiz-container {
+  width: 80%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(10px); */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Buttons */
+.btn {
+  background: #ff7eb3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #ff4f91;
+}
+
+/* Options */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.option-item {
+  position: relative;
+  background: linear-gradient(135deg, #f8b5b7, #fad0c4);
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.option-item:hover {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide default radio button */
+.option-item input[type="radio"] {
+  margin-right: 12px;
+  /* display: none; */
+}
+
+/* Effect when an option is selected */
+.option-item input[type="radio"]:checked + span {
+  background: linear-gradient(135deg, #ff4f91, #ff3b6b);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px; /* Less rounded for a square shape */
+  border: 2px solid #333;
+  background: white;
+  display: inline-block;
+  position: relative;
+}
+
+input[type="radio"]:checked {
+  /* background-color: #007bff; */
+  border: 3px solid #007bff;
+}
+
+input[type="radio"]:checked::before {
+  content: "✔";
+  width: 10px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Feedback */
+.feedback {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.correct {
+  color: #00ff99;
+}
+
+.wrong {
+  color: #ff4f4f;
+}
